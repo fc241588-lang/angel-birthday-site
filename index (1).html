@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a3270"><meta name="robots" content="noindex,nofollow,noarchive">
+<title>شبی که آسمان، تو را به من سپرد</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#03112a;color:#eef6ff;font-family:Tahoma,"Vazirmatn",sans-serif}body{overflow-x:hidden}.screen{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(circle at 50% 75%,#123f7a 0,#08265a 38%,#03112a 75%)}.stars{position:absolute;inset:0;pointer-events:none}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#dff4ff;box-shadow:0 0 7px #dff4ff;opacity:.7;animation:twinkle 3s infinite ease-in-out}.star.big{width:3px;height:3px}.shoot{position:absolute;width:80px;height:1px;background:linear-gradient(90deg,transparent,#bfe8ff,transparent);transform:rotate(-25deg);opacity:0;animation:shoot 7s linear infinite}.moon{position:absolute;width:112px;height:112px;border-radius:50%;right:11%;top:12%;background:radial-gradient(circle at 38% 35%,#fff 0,#dcecff 48%,#9db5d1 100%);box-shadow:0 0 35px rgba(180,220,255,.45);opacity:0;animation:rise 2.8s 1.8s forwards}.moon:after{content:"";position:absolute;width:105px;height:105px;border-radius:50%;background:#03112a;right:-25px;top:-8px}.wrap{position:relative;z-index:2;width:min(92%,620px);text-align:center;padding:30px 18px}.kicker{font-size:12px;letter-spacing:2px;color:#8da8c7;margin-bottom:30px;opacity:0;animation:fade 1.4s .7s forwards}.hero{font-size:clamp(25px,7vw,44px);line-height:1.75;font-weight:700;margin:0 auto;max-width:600px;text-shadow:0 0 24px rgba(150,210,255,.18);opacity:0;animation:fadeUp 1.8s 1.4s forwards}.hero small{display:block;font-size:.72em;font-weight:400;color:#d7e9fb;margin-top:18px}.date{margin-top:36px;color:#819abb;font-size:12px;opacity:0;animation:fade 1.5s 3.2s forwards}.btn{margin-top:34px;border:1px solid rgba(174,222,255,.35);background:rgba(9,43,92,.68);color:#eef8ff;border-radius:999px;padding:13px 25px;font-size:15px;cursor:pointer;backdrop-filter:blur(8px);box-shadow:0 0 24px rgba(80,160,220,.08);opacity:0;animation:fade 1.2s 4s forwards}.btn:active{transform:scale(.98)}.gate{margin-top:28px;display:flex;flex-direction:column;align-items:center;gap:10px}.pass{width:min(240px,75vw);padding:12px 16px;border-radius:999px;border:1px solid rgba(174,222,255,.22);background:rgba(5,25,60,.78);color:#eef8ff;text-align:center;outline:none;backdrop-filter:blur(8px);font-size:14px}.pass:focus{border-color:rgba(174,222,255,.55);box-shadow:0 0 20px rgba(80,160,220,.12)}.pass::placeholder{color:#718aa7}.gateError{height:18px;font-size:11px;color:#b9d8f3;opacity:.9}.hidden{display:none!important}.section{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;padding:70px 20px;background:radial-gradient(circle at 50% 15%,#15529a 0,#0a3270 38%,#03112a 82%);overflow:hidden}.section .content{width:min(92%,650px);position:relative;z-index:3;text-align:center}.eyebrow{font-size:12px;color:#91b9df;letter-spacing:1px;margin-bottom:15px}.title{font-size:clamp(30px,9vw,56px);margin:0 0 22px;line-height:1.3}.lead{font-size:17px;line-height:2.3;color:#dceaf8;white-space:pre-line}.count{margin:32px 0 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.box{background:linear-gradient(180deg,rgba(20,83,151,.68),rgba(6,35,82,.78));border:1px solid rgba(160,220,255,.28);border-radius:17px;padding:15px 4px;box-shadow:0 10px 35px rgba(0,60,150,.18),inset 0 1px 0 rgba(255,255,255,.08)}.num{font-size:29px;font-weight:800;color:#f2fbff;text-shadow:0 0 14px rgba(140,220,255,.3)}.lab{font-size:10px;color:#b7d8f4;margin-top:6px}.starsGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:30px 0}.tapStar{aspect-ratio:1;border:0;background:transparent;color:#dff5ff;font-size:30px;cursor:pointer;text-shadow:0 0 15px #bcecff}.tapStar span{display:block;transition:.35s}.tapStar:active span{transform:scale(.8)}.letter{background:rgba(5,17,34,.65);border:1px solid rgba(180,220,255,.12);border-radius:24px;padding:26px 20px;text-align:right;line-height:2.2;color:#dfeaf6;white-space:pre-line;box-shadow:0 15px 50px rgba(0,0,0,.2)}.lily{width:130px;height:130px;margin:10px auto 18px;cursor:pointer;filter:drop-shadow(0 0 22px rgba(65,160,255,.55));transition:transform 1.2s}.lily.open{transform:scale(1.12) rotate(-2deg)}.lily svg{width:100%;height:100%;overflow:visible}.petal{
+    fill:#5b8fdc;
+    stroke:#b8d5ff;
+    stroke-width:1.5;
+}
+
+.petal2{
+    fill:#3f72c4;
+}
+
+.petal3{
+    fill:#6f9fe8;
+    stroke:#b8d5ff;
+    stroke-width:1.2;
+}
+
+.lilyCenter{
+    fill:#f4f0d0;
+}
+
+.stamen{
+    stroke:#e8d98a;
+    stroke-width:2;
+    stroke-linecap:round;
+}
+.music{
+    margin:25px 0;
+    padding:16px 28px;
+    border-radius:999px;
+    background:linear-gradient(135deg,rgba(91,143,220,.45),rgba(38,76,145,.55));
+    border:1px solid rgba(190,220,255,.5);
+    color:#f5f9ff;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:.3px;
+    box-shadow:0 8px 25px rgba(30,100,200,.25);
+    backdrop-filter:blur(8px);
+    transition:.3s ease;
+}
+
+.music:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 12px 30px rgba(60,130,240,.4);
+    border-color:rgba(220,235,255,.8);
+}
+
+.music:active{
+    transform:scale(.97);
+}.final{background:radial-gradient(circle at 50% 35%,#1760ae 0,#0a3472 40%,#02102a 84%)}.finalMsg{font-size:clamp(19px,5.5vw,29px);line-height:2.15;white-space:pre-line}.fadeIn{animation:fadeUp 1.3s forwards}@keyframes fade{to{opacity:1}}@keyframes fadeUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}@keyframes rise{to{opacity:.95;transform:none}}@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.25)}}@keyframes shoot{0%{left:-15%;top:25%;opacity:0}10%{opacity:.8}35%{left:110%;top:55%;opacity:0}100%{opacity:0}}@media(max-width:480px){.moon{width:82px;height:82px;right:7%;top:8%}.moon:after{width:77px;height:77px}.count{gap:5px}.box{padding:10px 2px}.num{font-size:21px}.lead{font-size:15px}.letter{font-size:14px}}
+.moon-background {
+    position: absolute;
+    inset: 0;
+    background-image: url("moon.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.section .content,
+.section .stars {
+    position: relative;
+    z-index: 1;
+}
+</style></head>
+<body>
+<section id="entry" class="screen">
+<div class="stars" id="entryStars"></div><div class="shoot"></div><div class="moon"></div>
+<div class="wrap"><div class="kicker">سنندج · ۵ مهر ۱۳۸۵</div>
+<h1 class="hero">این آسمون برای همه نیست...<small>فقط برای یه نفره.<br>برای خاص‌ترین معجزه‌ی خدا،<br>برای تک‌فرشته‌ی قشنگ خداست. 🤍</small></h1>
+<div class="date">شبی که همه‌چیز از تو شروع شد.</div>
+<div class="gate">
+<input id="pass" class="pass" type="password" inputmode="text" autocomplete="off" placeholder="رمز آسمان" aria-label="رمز آسمان" onkeydown="if(event.key==='Enter') openSky()">
+<button class="btn" onclick="openSky()">باز کردن آسمان ✦</button>
+<div id="gateError" class="gateError" aria-live="polite"></div>
+</div></div></section>
+
+<main id="site" class="hidden">
+<section class="section"><div class="moon-background"></div><div class="stars" id="skyStars"></div><div class="content">
+<div class="eyebrow">سنندج · ۵ مهر ۱۳۸۵</div><h2 class="title">آیدا خانوم</h2>
+<p class="lead">شبی که ظهور کردی،
+یه آسمون برای همیشه
+به اسم قشنگ و خاص تو ثبت شد.
+
+این ماه،
+ماهِ شبیه
+که من خوشبخت‌ترین آدم روی زمین شدم؛
+شبی که خدا بهترین و خاص‌ترین هدیه‌شو بهم داد،
+معجزه‌شو نشونم داد.</p>
+<div class="eyebrow" style="margin-top:34px;font-size:14px;color:#c7e7ff">شمارش معکوس تا لحظه‌ی تولد</div><div class="count" id="count"></div><div class="eyebrow">تا سالروز ظهور فرشته‌ی خدا</div>
+</div></section>
+
+<section class="section"><div class="content"><div class="eyebrow"></div><h2 class="title">  توی هر ستاره یه حرف هست ، بزن روش 😁🤍</h2><p class="lead"</p><div class="starsGrid" id="starsGrid"></div><div id="starText" class="letter hidden"></div></div></section>
+
+<section class="section"><div class="content"><div class="eyebrow">بزن رو گل🤍</div><div id="lily" class="lily" onclick="openLily()" aria-label="لیلیوم آبی" role="button">
+<svg viewBox="0 0 140 140" aria-hidden="true">
+
+<path class="petal" d="M70 72 C52 55 45 30 58 12 C72 25 76 49 70 72Z"/>
+<path class="petal2" d="M70 72 C88 55 95 30 82 12 C68 25 64 49 70 72Z"/>
+
+<path class="petal3" d="M68 73 C47 70 25 58 18 40 C40 39 59 51 68 73Z"/>
+<path class="petal3" d="M72 73 C93 70 115 58 122 40 C100 39 81 51 72 73Z"/>
+
+<path class="petal2" d="M68 76 C47 78 28 91 22 108 C43 105 60 94 68 76Z"/>
+<path class="petal2" d="M72 76 C93 78 112 91 118 108 C97 105 80 94 72 76Z"/>
+
+<path class="petal" d="M70 74 C58 65 33 67 17 77 C33 88 55 87 70 74Z"/>
+<path class="petal" d="M70 74 C82 65 107 67 123 77 C107 88 85 87 70 74Z"/>
+
+<path class="petal2" d="M70 78 C58 87 49 103 51 120 C64 110 70 94 70 78Z"/>
+<path class="petal2" d="M70 78 C82 87 91 103 89 120 C76 110 70 94 70 78Z"/>
+
+<circle class="lilyCenter" cx="70" cy="74" r="7"/>
+
+<path class="stamen" d="M66 70L54 50M69 69L64 46M73 69L78 46M76 71L88 51"/>
+
+</svg></svg></div><div id="lilyText" class="letter hidden"></div><button class="music" onclick="playMusic()">🎧 اگه دوست داشتی این ۳ تا رو گوش کن😊🤍</button><audio id="audio" controls preload="none" class="hidden"></audio></div></section>
+
+<section class="section"><div class="content"><div class="eyebrow"></div><div class="letter">آیدا خانوم،
+
+نمی‌دونم چطور باید درباره‌ی تو بنویسم که آخرش احساس نکنم هنوز خیلی چیزها رو نگفتم.
+من همیشه، از اول، هر وقت راجبت نوشتم، تهش دیدم خیلی چیزا توی دلم مونده که نگفتم.
+
+چیزی که می‌خوام واقعاً برای تولدت بگم رو شب تولدت می‌گم بهت،
+ولی نمی‌خواستم اینجا خالی باشه.
+
+فقط می‌دونم از وقتی توی زندگیم دارمت، خیلی چیزا دیگه مثل قبل نیستن.
+روزا اسم تو،
+بعضی حرف‌هات،
+حتی بعضی خاطره‌های کوچیکمون،
+یه جوری توی ذهنم می‌مونن که خودم هم نمی‌فهمم چرا این‌قدر برام مهم شدن.
+
+شاید هیچ‌وقت نتونم دقیقاً بهت توضیح بدم که چقدر از بودنت خوشحالم،
+ولی امشب، توی این صفحه، می‌خوام حداقل یک بار سعی کنم.
+
+من برای تو فقط یک تولد دیگه آرزو نمی‌کنم.
+آرزو می‌کنم سالی که شروع می‌کنی،
+کمتر خسته بشی،
+بیشتر بخندی،
+به چیزهایی که براشون تلاش می‌کنی برسی،
+و یه روز به خودت نگاه کنی و بفهمی چقدر قوی‌تر از چیزی بودی که فکر می‌کردی.
+
+و اگر یه روزی این صفحه رو دوباره دیدی،
+اگر یه روزی از این شب خیلی دور شده بودیم،
+فقط یه چیز رو یادت بمونه:
+
+یه نفر،
+یه شب،
+زیر همین آسمونی که برات ساخته بود،
+تموم تلاشش رو کرد تا بهت بگه:
+
+خییییییلی خوشحال و خوشبختم که به دنیا اومدی.
+
+نه فقط چون تولدته،
+بلکه چون اگه به دنیا نمی‌اومدی،
+فرشته‌ای که بودنش برای من معنی پیدا کرد،
+هیچ‌وقت وجود نداشت.
+
+سالروز ظهورت مبارک؛
+خودت و من باشه،
+فرشته‌ی قشنگ خدا،
+آیدا خانومم 🤍
+
+امیدوارم آسمون همیشه
+برای تو
+جای امنی برای آرزو کردن داشته باشه.
+
+مرسی که به دنیا اومدی 🫂🤍</div></div></section>
+
+<section class="section final"><div class="stars" id="finalStars"></div><div class="content"><div id="finalCountdown" class="eyebrow">۵ مهر · ۰۰:۰۰</div><div id="finalMessage" class="finalMsg hidden">تولدت،
+روز ظهورت،
+روز شکفته شدنت،
+روز روشن و قشنگ شدن دنیا،
+مبارک جفتمون باشه 🫠🥺🫂🤍
+
+امیدوارم،
+لیاقت بودن کنارت رو داشته باشم
+و سال بعد،
+روز تولدت کنارت باشم 🥲🫂🤍
+
+تبریک اصلیمو،
+توی تلگرام برات می‌فرستم؛
+ولی...
+
+مرسی که با به دنیا اومدنت،
+دنیا رو روشن کردی برام.
+معنای زندگی و تمومِ زندگیم شدی.
+
+مرسی که هستی
+و مرسی که به دنیا اومدی،
+فرشته خانومم،
+آیداجونم 🫠🤍✨</div></div></section>
+</main>
+<script>
+const PASSWORD='khorshid5785';
+const target=new Date('2026-09-27T00:00:00+03:30');
+const starTexts=[
+'برای تموم وقت‌هایی که خودت نفهمیدی،\nولی حتی فکرِ بودنت حالمو خوب کرد، باعث شد لبخند بزنم.\nبرای بودنت؛\nکه قشنگ‌ترین و بهترین هدیه‌ای بود که خدا می‌تونست به یه نفر توی این جهان بده.\nبرای اینکه تنها دلیل و امید زندگیمی.\nبرای داشتنت؛\nکه باعث شد من خوشبخت‌ترین آدم روی زمین باشم.',
+'بعضی آدما رو نمی‌شه با توضیح معرفی کرد؛\nتو حتی با اونا هم فرق داری.\nشاید به خاطر اینکه تو یه آدم ساده نیستی؛\nبه خاطر اینه که تو فرشته‌ای...\nیه فرشته‌ی واقعی.\nفقط می‌تونم بگم:\nخییییلی خوشحالم که دارمت،\nفرشته خانوم.',
+'یه عالمه حرف هست که شاید هیچ‌وقت نتونم دقیقاً همون‌طوری که توی دلمه بهت بگم؛\nچون من نمی‌تونم چیزی که توی دلمه رو درست بیان کنم.\nمخصوصاً تو...\nکه هیچ‌وقت نتونستم چیز واقعی‌ای که باید بگم رو بهت بگم.\nولی اگه یه روز شک کردی که بودنت برای کسی مهمه،\nکسی برات ارزش قائله و دوستت داره،\nامیدوارم بتونم کاری کنم که هیییچ‌وقت یادت نره:\nکه من، با تموم وجودم دوستت دارم\nو بی‌نهایت برام مهمی.\nحتی اگه کل دنیا ازت بد بگه،\nحتی اگه کل دنیا هم باهات دشمن باشه،\nمن با تموم وجودم، هر لحظه، بیشتر از قبل دوستت دارم؛\nکنارتم\nو نوکرتم.',
+'آرزو می‌کنم به تموم چیزهایی که توی دلت هست،\nبه تموم چیزهایی که دوست داری و آرزوشو داری،\nبا کمترین سختی ممکن برسی.\nو روزی که به همشون رسیدی،\nبرگردی و به راهت نگاه کنی،\nلبخند بزنی\nو تموم خستگیت از تنِ فرشته‌ی قشنگم بیرون بره.\nو ببینی که ارزشش رو داشته.\nتو وقتی حالت خوب باشه\nو به آرزوهات برسی،\nمنم به آرزوهام رسیدم.',
+'اگه بخوام تو رو با یه کلمه تعریف کنم، نمی‌تونم.\nمن حتی هیچ‌وقت نمی‌تونم تو رو با هزاران هزاران جمله و متن توصیف کنم،\nچون تو توصیف‌ناپذیری.\nتو شدی قشنگ‌ترین اتفاق و دارایی زندگیم.\nتو بهترین هدیه‌ای هستی که خدا بی‌خبر بهم داد؛\nو به خاطرش، روزی هزار بار هم شکر کنم، بازم کمه.'
+];
+function makeStars(id,n=55){const c=document.getElementById(id);for(let i=0;i<n;i++){let s=document.createElement('i');s.className='star'+(i%13===0?' big':'');s.style.left=(Math.random()*100)+'%';s.style.top=(Math.random()*100)+'%';s.style.animationDelay=(Math.random()*4)+'s';s.style.animationDuration=(2+Math.random()*4)+'s';c.appendChild(s)}}
+makeStars('entryStars',48);
+function openSky(){
+    const input=document.getElementById('pass');
+    const err=document.getElementById('gateError');
+
+    if(input.value!==PASSWORD){
+        err.textContent='این آسمون فقط با رمز خودش باز می‌شه.';
+        input.value='';
+        input.focus();
+        return;
+    }
+
+    err.textContent='';
+
+    const entry=document.getElementById('entry');
+    const site=document.getElementById('site');
+
+    entry.style.transition='opacity 1.5s ease, transform 1.5s ease';
+    entry.style.opacity='0';
+    entry.style.transform='scale(1.03)';
+
+    setTimeout(()=>{
+        entry.classList.add('hidden');
+        site.classList.remove('hidden');
+
+        site.style.opacity='0';
+        site.style.transition='opacity 1.5s ease';
+
+        requestAnimationFrame(()=>{
+            site.style.opacity='1';
+        });
+
+        makeStars('skyStars',75);
+        makeStars('finalStars',65);
+        window.scrollTo(0,0);
+    },1500);
+}
+function tick(){let d=Math.max(0,target-Date.now());let sec=Math.floor(d/1000),days=Math.floor(sec/86400);sec%=86400;let h=Math.floor(sec/3600);sec%=3600;let m=Math.floor(sec/60);sec%=60;document.getElementById('count').innerHTML=[['روز',days],['ساعت',h],['دقیقه',m],['ثانیه',sec]].map(x=>`<div class="box"><div class="num">${String(x[1]).padStart(2,'0')}</div><div class="lab">${x[0]}</div></div>`).join('');if(d<=0){document.getElementById('finalCountdown').classList.add('hidden');document.getElementById('finalMessage').classList.remove('hidden');document.querySelector('.final').classList.add('fadeIn')}}setInterval(tick,1000);tick();
+const sg=document.getElementById('starsGrid');starTexts.forEach((_,i)=>{let b=document.createElement('button');b.className='tapStar';b.innerHTML='<span>✦</span>';b.onclick=()=>{let t=document.getElementById('starText');t.textContent=starTexts[i];t.classList.remove('hidden');t.classList.remove('fadeIn');void t.offsetWidth;t.classList.add('fadeIn');t.scrollIntoView({behavior:'smooth',block:'center'})};sg.appendChild(b)});
+function openLily(){
+    const l=document.getElementById('lily');
+    const t=document.getElementById('lilyText');
+
+    l.classList.add('open');
+
+    t.textContent='برای تو،\nیه تکه از این آسمون رو گذاشتم اینجا...\n\nچون بعضی چیزا زیادی قشنگن\nکه فقط توی آسمون بمونن.\n\nآبی رو دوست داشتی...\nمنم آسمون رو آبی کردم،\nکه اینجا یه چیزی باشه\nکه تو رو یاد خودت بندازه. 🪷🤍';
+
+    setTimeout(()=>{
+        t.classList.remove('hidden');
+        t.classList.add('fadeIn');
+    },850);
+}
+const songs = [
+    'music/song1.mp3',
+    'music/song2.mp3',
+    'music/song3.mp3'
+];
+
+let currentSong = 0;
+
+function playMusic() {
+    const audio = document.getElementById('audio');
+    const button = document.querySelector('.music');
+
+    audio.src = songs[currentSong];
+    audio.classList.remove('hidden');
+
+    button.textContent = '♪ در حال پخش برای فرشته خدا...';
+
+    audio.play().catch(function(error) {
+        console.log(error);
+    });
+}
+
+document.getElementById('audio').addEventListener('ended', function() {
+    currentSong++;
+
+    if (currentSong < songs.length) {
+        this.src = songs[currentSong];
+        this.play();
+    } else {
+        currentSong = 0;
+        document.querySelector('.music').textContent = '🎧 یه آهنگ برای فرشته خدا';
+    }
+});
+</script>
+<div class="music-player">
+    <button id="musicButton"></button>
+    <audio id="music"></audio>
+</div>
+
+<script>
+const songs = [
+    "music/song1.mp3",
+    "music/song2.mp3",
+    "music/song3.mp3"
+];
+
+let currentSong = 0;
+const music = document.getElementById("music");
+const button = document.getElementById("musicButton");
+
+function playSong() {
+    music.src = songs[currentSong];
+    music.play();
+    button.textContent = "🎵 در حال پخش 🤍";
+}
+
+button.addEventListener("click", () => {
+    if (music.paused) {
+        playSong();
+    } else {
+        music.pause();
+        button.textContent = "🎵 ادامه‌ی آهنگ 🤍";
+    }
+});
+
+music.addEventListener("ended", () => {
+    currentSong++;
+
+    if (currentSong < songs.length) {
+        playSong();
+    } else {
+        currentSong = 0;
+        button.textContent = "🎵 پخش آهنگ 🤍";
+    }
+});
+</script>
+
+</body>
+</html>
