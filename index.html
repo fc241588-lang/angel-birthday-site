@@ -123,43 +123,7 @@
 
 </svg></svg></div><div id="lilyText" class="letter hidden"></div><button class="music" onclick="playMusic()">🎧 اگه دوست داشتی این ۳ تا رو گوش کن😊🤍</button><audio id="audio" controls preload="none" class="hidden"></audio>
 <script>
-const songs = [
-    "music/song1.mp3",
-    "music/song2.mp3",
-    "music/song3.mp3"
-];
 
-let currentSong = 0;
-
-const music = document.getElementById("audio");
-const button = document.getElementById("musicButton");
-
-button.addEventListener("click", function () {
-    if (music.paused) {
-        if (!music.src) {
-            music.src = songs[currentSong];
-        }
-
-        music.play();
-        button.textContent = "🎵 در حال پخش برای فرشته خدا... 🤍";
-    } else {
-        music.pause();
-        button.textContent = "🎵 ادامه‌ی آهنگ 🤍";
-    }
-});
-
-music.addEventListener("ended", function () {
-    currentSong++;
-
-    if (currentSong < songs.length) {
-        music.src = songs[currentSong];
-        music.play();
-    } else {
-        currentSong = 0;
-        button.textContent = "🎧 اگه دوست داشتی این ۳ تا رو گوش کن 😊🤍";
-    }
-});
-</script>
 </div></section>
 
 <section class="section"><div class="content"><div class="eyebrow"></div><div class="letter">آیدا خانوم،
