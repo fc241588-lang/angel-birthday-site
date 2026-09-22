@@ -121,7 +121,46 @@
 
 <path class="stamen" d="M66 70L54 50M69 69L64 46M73 69L78 46M76 71L88 51"/>
 
-</svg></svg></div><div id="lilyText" class="letter hidden"></div><button class="music" onclick="playMusic()">🎧 اگه دوست داشتی این ۳ تا رو گوش کن😊🤍</button><audio id="audio" controls preload="none" class="hidden"></audio></div></section>
+</svg></svg></div><div id="lilyText" class="letter hidden"></div><button class="music" onclick="playMusic()">🎧 اگه دوست داشتی این ۳ تا رو گوش کن😊🤍</button><audio id="audio" controls preload="none" class="hidden"></audio>
+<script>
+const songs = [
+    "music/song1.mp3",
+    "music/song2.mp3",
+    "music/song3.mp3"
+];
+
+let currentSong = 0;
+
+const music = document.getElementById("audio");
+const button = document.getElementById("musicButton");
+
+button.addEventListener("click", function () {
+    if (music.paused) {
+        if (!music.src) {
+            music.src = songs[currentSong];
+        }
+
+        music.play();
+        button.textContent = "🎵 در حال پخش برای فرشته خدا... 🤍";
+    } else {
+        music.pause();
+        button.textContent = "🎵 ادامه‌ی آهنگ 🤍";
+    }
+});
+
+music.addEventListener("ended", function () {
+    currentSong++;
+
+    if (currentSong < songs.length) {
+        music.src = songs[currentSong];
+        music.play();
+    } else {
+        currentSong = 0;
+        button.textContent = "🎧 اگه دوست داشتی این ۳ تا رو گوش کن 😊🤍";
+    }
+});
+</script>
+</div></section>
 
 <section class="section"><div class="content"><div class="eyebrow"></div><div class="letter">آیدا خانوم،
 
@@ -261,38 +300,7 @@ function openLily(){
         t.classList.add('fadeIn');
     },850);
 }
-const songs = [
-    'music/song1.mp3',
-    'music/song2.mp3',
-    'music/song3.mp3'
-];
 
-let currentSong = 0;
-
-function playMusic() {
-    const audio = document.getElementById('audio');
-    const button = document.querySelector('.music');
-
-    audio.src = songs[currentSong];
-    audio.classList.remove('hidden');
-
-    button.textContent = '♪ در حال پخش برای فرشته خدا...';
-
-    audio.play().catch(function(error) {
-        console.log(error);
-    });
-}
-
-document.getElementById('audio').addEventListener('ended', function() {
-    currentSong++;
-
-    if (currentSong < songs.length) {
-        this.src = songs[currentSong];
-        this.play();
-    } else {
-        currentSong = 0;
-        document.querySelector('.music').textContent = '🎧 یه آهنگ برای فرشته خدا';
-    }
 });
 </script>
 <div class="music-player">
@@ -301,41 +309,7 @@ document.getElementById('audio').addEventListener('ended', function() {
 </div>
 
 <script>
-const songs = [
-    "music/song1.mp3",
-    "music/song2.mp3",
-    "music/song3.mp3"
-];
 
-let currentSong = 0;
-const music = document.getElementById("music");
-const button = document.getElementById("musicButton");
-
-function playSong() {
-    music.src = songs[currentSong];
-    music.play();
-    button.textContent = "🎵 در حال پخش 🤍";
-}
-
-button.addEventListener("click", () => {
-    if (music.paused) {
-        playSong();
-    } else {
-        music.pause();
-        button.textContent = "🎵 ادامه‌ی آهنگ 🤍";
-    }
-});
-
-music.addEventListener("ended", () => {
-    currentSong++;
-
-    if (currentSong < songs.length) {
-        playSong();
-    } else {
-        currentSong = 0;
-        button.textContent = "🎵 پخش آهنگ 🤍";
-    }
-});
 </script>
 
 </body>
