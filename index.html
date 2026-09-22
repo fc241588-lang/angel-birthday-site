@@ -275,6 +275,26 @@ function openLily(){
 <script>
 
 </script>
+<script>
+window.openSky = function () {
+    const input = document.getElementById('pass');
+    const err = document.getElementById('gateError');
+    const entry = document.getElementById('entry');
+    const site = document.getElementById('site');
 
+    if (input.value !== '1234') {
+        err.textContent = 'این آسمون فقط با رمز خودش باز می‌شه.';
+        input.value = '';
+        input.focus();
+        return;
+    }
+
+    err.textContent = '';
+    entry.classList.add('hidden');
+    site.classList.remove('hidden');
+    window.scrollTo(0, 0);
+};
+</script>
+    
 </body>
 </html>
