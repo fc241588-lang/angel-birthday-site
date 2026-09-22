@@ -82,7 +82,7 @@
 <div id="gateError" class="gateError" aria-live="polite"></div>
 </div></div></section>
 
-<main id="site">
+<main id="site" class="hidden">
 <section class="section"><div class="moon-background"></div><div class="stars" id="skyStars"></div><div class="content">
 <div class="eyebrow">سنندج · ۵ مهر ۱۳۸۵</div><h2 class="title">آیدا خانوم</h2>
 <p class="lead">شبی که ظهور کردی،
@@ -121,11 +121,45 @@
 
 <path class="stamen" d="M66 70L54 50M69 69L64 46M73 69L78 46M76 71L88 51"/>
 
-</svg></svg></div><div id="lilyText" class="letter hidden"></div><button class="music" onclick="playMusic()">🎧 اگه دوست داشتی این ۳ تا رو گوش کن😊🤍</button><audio id="audio" controls preload="none" class="hidden"></audio>
+</svg></svg></div><div id="lilyText" class="letter hidden"></div><button class="music" id="musicButton">🎧 اگه دوست داشتی این ۳ تا رو گوش کن😊🤍</button><audio id="audio" controls preload="none" class="hidden"></audio></div></section>
 <script>
+const songs = [
+    "song1.mp3",
+    "song2.mp3",
+    "song3.mp3"
+];
 
-</div></section>
+let currentSong = 0;
 
+const music = document.getElementById("audio");
+const button = document.getElementById("musicButton");
+
+button.addEventListener("click", function () {
+    if (music.paused) {
+        if (!music.src) {
+            music.src = songs[currentSong];
+        }
+
+        music.play();
+        button.textContent = "🎵 در حال پخش برای فرشته خدا... 🤍";
+    } else {
+        music.pause();
+        button.textContent = "🎵 ادامه‌ی آهنگ 🤍";
+    }
+});
+
+music.addEventListener("ended", function () {
+    currentSong++;
+
+    if (currentSong < songs.length) {
+        music.src = songs[currentSong];
+        music.play();
+    } else {
+        currentSong = 0;
+        button.textContent = "🎧 اگه دوست داشتی این ۳ تا رو گوش کن 😊🤍";
+    }
+});
+</script>
 <section class="section"><div class="content"><div class="eyebrow"></div><div class="letter">آیدا خانوم،
 
 نمی‌دونم چطور باید درباره‌ی تو بنویسم که آخرش احساس نکنم هنوز خیلی چیزها رو نگفتم.
@@ -264,15 +298,6 @@ function openLily(){
         t.classList.add('fadeIn');
     },850);
 }
-
-</script>
-<div class="music-player">
-    <button id="musicButton"></button>
-    <audio id="music"></audio>
-</div>
-
-<script>
-
 </script>
 
 </body>
